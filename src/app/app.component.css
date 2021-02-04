@@ -1,0 +1,21 @@
+body {
+  margin-left: 5px;
+}
+button {
+  font-family: Georgia, sans-serif;
+  margin-right: 5px;
+  margin-top: 3px;
+}
+welcome {
+  text-align: center;
+}
+.timer-button-container {
+  text-align: center;
+}
+.timer-counter-label {
+  text-align: center;
+}
+
+.timer {
+  font-size: 30px;
+}

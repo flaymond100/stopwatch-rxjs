@@ -1,0 +1,23 @@
+<welcome name="{{ name }}"></welcome>
+
+<div class="row">
+  <div class="col-lg-4 m-b-30">
+    <section class="timer-counter-label">
+      <div class="timer" *ngIf="displayTimer; else elseBlock">{{displayTimer}}</div>
+      <ng-template #elseBlock> 00:00:00 </ng-template>
+    </section>
+    <section class="timer-button-container">
+      <button class="btn btn-outline-light" (click)="toggleTimer()">
+        {{ startStop }}
+      </button>
+
+      <button class="btn btn-outline-light" (click)="wait($event)">
+        {{ waitBtn }}
+      </button>
+
+      <button class="btn btn-outline-light" (click)="resetValue()">
+        {{ reset }}
+      </button>
+    </section>
+  </div>
+</div>
